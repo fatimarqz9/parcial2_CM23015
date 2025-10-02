@@ -72,7 +72,7 @@ if($_POST)
 
     $conn_temp = $db->getConnection();
     
-        $stmt = $conn->prepare("INSERT INTO estudiante(nombre, telefono, fechaNacimiento, direccion) VALUES (:nombre, :telefono, :fechaNacimiento, :direccion)");
+        $stmt = $conn_temp->prepare("INSERT INTO estudiante(nombre, telefono, fechaNacimiento, direccion) VALUES (:nombre, :telefono, :fechaNacimiento, :direccion)");
         $stmt->bindParam(":nombre", $nombre);
         $stmt->bindParam(":telefono", $telefono);
         $stmt->bindParam(":fechaNacimiento", $fechaNacimiento);
