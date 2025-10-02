@@ -5,7 +5,7 @@ namespace lib;
 class Route{
     private static $routes = [];
 
-    private static $URL_BASE = "/mvc/public";
+    private static $URL_BASE = "/ejercicio1_cm23015/mvc/public";
 
 
     public static function get($uri, $callback){

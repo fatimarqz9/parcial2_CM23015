@@ -3,6 +3,10 @@
 use app\Controllers\HomeController;
 use lib\Route;
 
-Route::get("/", [HomeController::class, "index"]);
+Route::get("/", function(){
+    return "RUTA RAIZ";
+});
 
+
+Route::dispatch();
 ?>
